@@ -3,7 +3,7 @@ var criticalJavaScript = (function(){
 		//For example we simulate the loading of site before we get our deferred JS
 		setTimeout(function(){
 			var element = document.createElement('script');
-			element.src = '/javascript/main.js';
+			element.src = 'javascript/main.js';
 			document.body.appendChild(element);
 		}, 5000);
 	};
