@@ -15,6 +15,8 @@ var mainJavaScript = (function() {
         var triggeredEventsArray = triggeredEvents ? triggeredEvents.split(" ") : [];
 
         if (triggeredEventsArray.indexOf('click') !== -1) {
+            triggeredEventsArray.splice(triggeredEventsArray.indexOf('click'), 1);
+            el.setAttribute('data-triggered-events', triggeredEventsArray.join(" "));
             callback();
         }
 
