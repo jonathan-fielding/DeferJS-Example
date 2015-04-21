@@ -30,7 +30,7 @@ var mainJavaScript = (function() {
         init: function() {
             registerBehaviour('button-click', function(){
                 registerClick(this, function(){
-                    alert('test');
+                    alert('I was in the deferred JavaScript loaded after rest of the page');
                 });
             });
         }
