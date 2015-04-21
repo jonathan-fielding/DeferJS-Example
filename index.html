@@ -9,6 +9,10 @@
             margin: 0 auto;
         }
 
+        button {
+            font-size: 40px;
+        }
+
         [data-triggered-events="click"]:after {
             content: ' - please wait';
         }
@@ -20,9 +24,11 @@
         <h1>Deferring loading JavaScript example</h1>
         <p>So this is just a quick example I put together tonight to explore how we can improve the perception to the user of the performance of our site by deferring the main JavaScript and instead registering event handlers which give the the user the perception they can start interacting.</p>
 
-        <button data-behaviour="button-click" data-deferred-events="click" data-prevent-default="true">Button Click</button>
+        <button data-behaviour="button-click" data-deferred-events="click" data-prevent-default="true">Press me quickly</button>
 
-        <a href="https://github.com/jonathan-fielding/DeferJS-Example">The source on GitHub</a>
+        <p>
+            <a href="https://github.com/jonathan-fielding/DeferJS-Example">The source on GitHub</a>
+        </p>
     </div>
 
 </body>
